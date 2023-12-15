@@ -1,22 +1,16 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
-import Sidenav from './Sidenav';
-import Home from './pages/Home';
-import About from './pages/About';
-import Settings from './pages/Settings';
+import React from 'react'
+import Sidenav from '../Sidenav'
+import { Box } from '@mui/material'
 
-function App() {
-  return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' exact element={<Home />} />
-          <Route path='/about' exact element={<About />} />
-          <Route path='/settings' exact element={<Settings />} />
-        </Routes>
-      </BrowserRouter>
-    </>
-  );
+export default function About() {
+    return (
+        <>
+            <Box sx={{ display: "flex" }}>
+                <Sidenav />
+                <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+                    <h1>About</h1>
+                </Box>
+            </Box>
+        </>
+    )
 }
-
-export default App;
