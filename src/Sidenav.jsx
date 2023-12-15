@@ -1,14 +1,4 @@
-import React, { Component } from 'react'
-
-export class Sidenav extends Component {
-  render() {
-    return (
-      <div>Sidenav</div>
-    )
-  }
-}
-
-export default Sidenavimport * as React from 'react';
+import * as React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MuiDrawer from '@mui/material/Drawer';
@@ -44,9 +34,9 @@ const closedMixin = (theme) => ({
         duration: theme.transitions.duration.leavingScreen,
     }),
     overflowX: 'hidden',
-    width: calc(${theme.spacing(7)} + 1px),
+    width: `calc(${theme.spacing(7)} + 1px)`,
     [theme.breakpoints.up('sm')]: {
-        width: calc(${theme.spacing(8)} + 1px),
+        width: `calc(${theme.spacing(8)} + 1px)`,
     },
 });
 
