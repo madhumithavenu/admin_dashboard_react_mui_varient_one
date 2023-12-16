@@ -23,7 +23,9 @@ export default function Home() {
                                 <Stack spacing={2} direction={"row"}>
                                     <Card sx={{ minWidth: 49 + "%", height: 150 }} className='gradient'>
                                         <CardContent>
-                                            
+                                            <div className='iconstyle'>
+                                                <CreditCardIcon />
+                                            </div>
                                             <Typography gutterBottom variant="h5" component="div" sx={{ color: "#ffffff" }}>
                                                 $500.00
                                             </Typography>
@@ -34,7 +36,9 @@ export default function Home() {
                                     </Card>
                                     <Card sx={{ minWidth: 49 + "%", height: 150 }} className='gradientlight'>
                                         <CardContent>
-                                            
+                                            <div className='iconstyle'>
+                                                <ShoppingBagIcon />
+                                            </div>
                                             <Typography gutterBottom variant="h5" component="div" sx={{ color: "#ffffff" }}>
                                                 $900.00
                                             </Typography>
