@@ -4,6 +4,7 @@ import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import Settings from './pages/Settings';
+import Analytics from './pages/Analytics';
 // import Navbar from './components/Navbar';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' exact element={<Home />} />
         <Route path='/about' exact element={<About />} />
         <Route path='/settings' exact element={<Settings />} />
+        <Route path='/analytics' exact element={<Analytics />} />
       </Routes>
     </>
   );
