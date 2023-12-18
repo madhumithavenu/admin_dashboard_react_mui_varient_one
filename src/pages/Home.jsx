@@ -8,6 +8,8 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import AccordionDash from '../components/AccordionDash.jsx';
+import BarChart from '../charts/BarChart.jsx';
+import CountUp from 'react-countup';
 
 export default function Home() {
     return (
@@ -27,7 +29,7 @@ export default function Home() {
                                                 <CreditCardIcon />
                                             </div>
                                             <Typography gutterBottom variant="h5" component="div" sx={{ color: "#ffffff" }}>
-                                                $500.00
+                                                $<CountUp delay={0.2} end={500} duration={0.3} />
                                             </Typography>
                                             <Typography gutterBottom variant="body2" component="div" sx={{ color: "#ccd1d1" }}>
                                                 Total Earnings
@@ -40,7 +42,7 @@ export default function Home() {
                                                 <ShoppingBagIcon />
                                             </div>
                                             <Typography gutterBottom variant="h5" component="div" sx={{ color: "#ffffff" }}>
-                                                $900.00
+                                                $<CountUp delay={0.2} end={900} duration={0.3} />
                                             </Typography>
                                             <Typography gutterBottom variant="body2" component="div" sx={{ color: "#ccd1d1" }}>
                                                 Total Orders
@@ -83,7 +85,7 @@ export default function Home() {
                             <Grid item xs={8}>
                                 <Card sx={{ height: 60 + "vh" }}>
                                     <CardContent>
-
+                                        <BarChart />
                                     </CardContent>
                                 </Card>
                             </Grid>
