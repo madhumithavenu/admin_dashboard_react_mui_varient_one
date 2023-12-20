@@ -7,6 +7,7 @@ import ProductList from './products/ProductList'
 export default function Products() {
     return (
         <>
+         <div className='bgcolor'>
             <Navbar />
             <Box height={70} />
             <Box sx={{ display: "flex" }}>
@@ -15,6 +16,7 @@ export default function Products() {
                     <ProductList />
                 </Box>
             </Box>
+            </div>
         </>
     )
 }
